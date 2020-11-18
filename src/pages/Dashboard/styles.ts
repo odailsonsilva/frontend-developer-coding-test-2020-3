@@ -35,10 +35,22 @@ export const ContainerFilters = styled.div`
 
   display: flex;
   align-items: center;
+`;
 
-  > div {
-    display: flex;
-    padding: 0 64px;
+export const Filters = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 64px;
+
+  span {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #606060;
+  }
+
+  div {
+    margin: 0 32px;
   }
 `;
 

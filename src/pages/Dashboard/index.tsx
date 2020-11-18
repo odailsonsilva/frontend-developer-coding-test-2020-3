@@ -9,6 +9,7 @@ import {
   Container,
   Hero,
   ContainerFilters,
+  Filters,
   Content,
   ContainerRestaurants,
   ButtonMore,
@@ -26,12 +27,12 @@ const Dashboard: React.FC = () => {
       </Hero>
 
       <ContainerFilters>
-        <div>
+        <Filters>
           <span>Filter By:</span>
           <OpenNow />
           <Price />
           <Categories />
-        </div>
+        </Filters>
       </ContainerFilters>
 
       <Content>

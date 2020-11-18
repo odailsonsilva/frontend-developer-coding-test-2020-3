@@ -5,7 +5,8 @@ import { Container } from './styles';
 const OpenNow: React.FC = () => {
   return (
     <Container>
-      <h1>OpenNow</h1>
+      <input type="radio" name="open" id="open" />
+      <span>Open Now</span>
     </Container>
   );
 };
