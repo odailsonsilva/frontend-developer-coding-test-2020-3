@@ -14,8 +14,8 @@ export default createGlobalStyle`
   }
 
 
-  body, input, button{
-    font-family: Arial, Helvetica, sans-serif;
+  html, body, input, button{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 62.5%;
   }
 
