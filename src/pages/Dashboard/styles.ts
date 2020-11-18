@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.div`
   width: 100%;
@@ -31,6 +32,14 @@ export const ContainerFilters = styled.div`
   height: 70px;
   width: 100%;
   margin-bottom: 64px;
+
+  display: flex;
+  align-items: center;
+
+  > div {
+    display: flex;
+    padding: 0 64px;
+  }
 `;
 
 export const Content = styled.main`
@@ -42,5 +51,36 @@ export const Content = styled.main`
     font-size: 3.4rem;
     font-weight: 300;
     margin-bottom: 42px;
+  }
+`;
+
+export const ContainerRestaurants = styled.section`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 80px;
+
+  div {
+    margin-right: 32px;
+  }
+`;
+
+export const ButtonMore = styled.button`
+  width: 416px;
+  height: 48px;
+  margin: 80px auto;
+  border-radius: 2px;
+  border: solid 1px #002b56;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #002b53;
+  background: #fff;
+  transition: background 0.3s ease;
+
+  cursor: pointer;
+
+  &:hover {
+    background: ${shade(0.1, '#fff')};
   }
 `;

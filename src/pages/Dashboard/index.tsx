@@ -1,8 +1,18 @@
 import React from 'react';
 
-import { Container, Hero, ContainerFilters, Content } from './styles';
-
 import Card from '../../components/Cart';
+import OpenNow from '../../components/OpenNow';
+import Price from '../../components/Price';
+import Categories from '../../components/Categories';
+
+import {
+  Container,
+  Hero,
+  ContainerFilters,
+  Content,
+  ContainerRestaurants,
+  ButtonMore,
+} from './styles';
 
 const Dashboard: React.FC = () => {
   return (
@@ -15,13 +25,28 @@ const Dashboard: React.FC = () => {
         </p>
       </Hero>
 
-      <ContainerFilters />
+      <ContainerFilters>
+        <div>
+          <span>Filter By:</span>
+          <OpenNow />
+          <Price />
+          <Categories />
+        </div>
+      </ContainerFilters>
 
       <Content>
         <h2>All Restaurants</h2>
-        <div>
+        <ContainerRestaurants>
           <Card />
-        </div>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </ContainerRestaurants>
+        <ButtonMore>LOAD MORE</ButtonMore>
       </Content>
     </Container>
   );
