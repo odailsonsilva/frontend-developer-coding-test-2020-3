@@ -16,7 +16,8 @@ export const Container = styled.div`
     margin-right: 8px;
   }
 
-  span {
+  > span {
     color: #002b56;
+    font-weight: 400;
   }
 `;
