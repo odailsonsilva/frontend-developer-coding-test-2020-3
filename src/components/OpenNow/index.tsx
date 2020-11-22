@@ -6,7 +6,8 @@ const OpenNow: React.FC = () => {
   return (
     <Container>
       <input type="radio" name="open" id="open" />
-      <span>Open Now</span>
+
+      <label htmlFor="open">Open Now</label>
     </Container>
   );
 };

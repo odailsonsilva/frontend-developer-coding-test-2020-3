@@ -10,6 +10,7 @@ import {
   Hero,
   ContainerFilters,
   Filters,
+  ButtonClear,
   Content,
   ContainerRestaurants,
   ButtonMore,
@@ -33,6 +34,7 @@ const Dashboard: React.FC = () => {
           <Price />
           <Categories />
         </Filters>
+        <ButtonClear type="submit">CLEAR ALL</ButtonClear>
       </ContainerFilters>
 
       <Content>

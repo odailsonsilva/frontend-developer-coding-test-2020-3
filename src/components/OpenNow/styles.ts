@@ -16,8 +16,9 @@ export const Container = styled.div`
     margin-right: 8px;
   }
 
-  > span {
+  label {
     color: #002b56;
     font-weight: 400;
+    font-size: 1.6rem;
   }
 `;

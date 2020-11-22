@@ -26,7 +26,7 @@ export const Hero = styled.header`
   }
 `;
 
-export const ContainerFilters = styled.div`
+export const ContainerFilters = styled.form`
   border-bottom: 1px solid #e6e6e6;
   border-top: 1px solid #e6e6e6;
   height: 70px;
@@ -35,6 +35,7 @@ export const ContainerFilters = styled.div`
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const Filters = styled.div`
@@ -51,6 +52,31 @@ export const Filters = styled.div`
 
   div {
     margin: 0 32px;
+  }
+`;
+
+export const ButtonClear = styled.button`
+  width: 151px;
+  height: 38px;
+  border: 1px solid #002b56;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: transparent;
+  text-align: center;
+  color: #002b56;
+  margin: 0 64px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: ${shade(0.25, '#002b56')};
+    color: #fff;
+  }
+
+  &:disabled {
+    border-color: #e6e6e6;
+    color: #e6e6e6;
+    cursor: not-allowed;
   }
 `;
 
